@@ -12,7 +12,7 @@ iface = gr.Interface(
         gr.File(label="上传文档文件"),
         gr.Radio(['多选题', '填空题', '简答题'], label="选择题型")
     ],
-    outputs=gr.Textbox(label="输出"),
+    outputs=gr.Markdown(label="输出"),
     title="文档题型生成器"
 )
 
