@@ -1,0 +1,5 @@
+gradio==5.9.1
+openai==1.58.1
+pdfplumber==0.11.4
+python_docx==1.1.2
+pywin32==303

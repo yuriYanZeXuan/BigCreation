@@ -1,0 +1,9 @@
+data/*
+*.json
+!**/*.py
+flagged/*
+*.pyc
+*.pyo
+*.pyd
+*.pyw
+*.pyz
