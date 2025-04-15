@@ -1,0 +1,4 @@
+asc250 slots=2
+asc251 slots=2
+asc252 slots=2
+asc253 slots=2
