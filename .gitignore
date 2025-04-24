@@ -176,4 +176,10 @@ output/
 wandb/
 swanlog/
 generated_predictions.jsonl
-dataset/orcas-doctrain-top100.gz
+DeepSeek-R1-Distill-Qwen-7B/
+DeepSeek-R1-Distill-Llama-8B/
+Meta-Llama-3.1-8B-Instruct/
+nlp_bert_document-segmentation_english-base/
+ds_lora_llama_8B/
+data/squad_v2_qgen_filtered_with_answer.json
+data/squad_v2_qgen_filtered.json

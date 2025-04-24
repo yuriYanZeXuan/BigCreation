@@ -50,5 +50,5 @@ def check_dataset(file_path):
         print(f"发生错误：{e}")
 
 # 调用检查函数，传入数据集文件路径
-file_path = "data/squad_v2_qgen_filtered.json"
+file_path = "data/squad_v2_qgen_filtered_with_answer.json"
 check_dataset(file_path)

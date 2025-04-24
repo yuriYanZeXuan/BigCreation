@@ -710,5 +710,14 @@
   },
   "squad_v2_local_dev": {
     "file_name": "squad_v2_qgen_dev_filtered.json"
+  },
+  "squad_v2_local_with_answer":{
+    "file_name": "squad_v2_qgen_filtered_with_answer.json"
+  },
+  "squad_v2_local_dev_with_answer":{
+    "file_name": "squad_v2_qgen_dev_filtered_with_answer.json"
+  },
+  "temp":{
+    "file_name": "temp.json"
   }
 }

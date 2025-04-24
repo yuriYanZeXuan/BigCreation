@@ -1,0 +1,77 @@
+instructions:{
+    "predict_bleu-4": 25.41601969339623,
+    "predict_model_preparation_time": 0.0028,
+    "predict_rouge-1": 31.34618168800539,
+    "predict_rouge-2": 7.682676128706199,
+    "predict_rouge-l": 29.05707343328841,
+    "predict_runtime": 245.8663,
+    "predict_samples_per_second": 24.111,
+    "predict_steps_per_second": 1.509
+}
+
+noinstructions:{
+    "predict_bleu-4": 24.764790801886797,
+    "predict_model_preparation_time": 0.0029,
+    "predict_rouge-1": 30.57256824460917,
+    "predict_rouge-2": 7.1626536893531,
+    "predict_rouge-l": 28.372908305256068,
+    "predict_runtime": 238.1358,
+    "predict_samples_per_second": 24.893,
+    "predict_steps_per_second": 1.558
+}
+
+no fine-tuning:{
+    "predict_bleu-4": 2.056880306603774,
+    "predict_model_preparation_time": 0.0029,
+    "predict_rouge-1": 3.145568564690027,
+    "predict_rouge-2": 0.1317442385444744,
+    "predict_rouge-l": 1.1182030828840972,
+    "predict_runtime": 5075.1375,
+    "predict_samples_per_second": 1.168,
+    "predict_steps_per_second": 0.073
+}
+
+
+deepseek_qwen_7B:{
+    "predict_bleu-4": 25.53743286725068,
+    "predict_model_preparation_time": 0.0031,
+    "predict_rouge-1": 30.881440313342317,
+    "predict_rouge-2": 7.17752656671159,
+    "predict_rouge-l": 28.590688443396225,
+    "predict_runtime": 262.3229,
+    "predict_samples_per_second": 22.598,
+    "predict_steps_per_second": 1.414
+}
+
+deepseek_qwen_7B_with_answer:{
+    "predict_bleu-4": 40.53283328293011,
+    "predict_model_preparation_time": 0.0032,
+    "predict_rouge-1": 46.14820401545699,
+    "predict_rouge-2": 28.648982862903225,
+    "predict_rouge-l": 46.03088996975807,
+    "predict_runtime": 446.37,
+    "predict_samples_per_second": 13.28,
+    "predict_steps_per_second": 0.208
+}
+
+DeepSeek-R1-Distill-Llama-8B:{
+    "predict_bleu-4": 41.23073046034946,
+    "predict_model_preparation_time": 0.0031,
+    "predict_rouge-1": 46.93121587701613,
+    "predict_rouge-2": 29.24932723454301,
+    "predict_rouge-l": 46.49848333333333,
+    "predict_runtime": 503.0516,
+    "predict_samples_per_second": 11.784,
+    "predict_steps_per_second": 0.185
+}
+
+Meta-Llama-3.1-8B-Instruct:{
+    "predict_bleu-4": 40.88570688844086,
+    "predict_model_preparation_time": 0.003,
+    "predict_rouge-1": 46.31648933131721,
+    "predict_rouge-2": 28.798016448252685,
+    "predict_rouge-l": 46.01966654905914,
+    "predict_runtime": 451.2702,
+    "predict_samples_per_second": 13.136,
+    "predict_steps_per_second": 0.206
+}

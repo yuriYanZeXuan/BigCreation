@@ -1,0 +1,13 @@
+### Note: DO NOT use quantized model or quantization_bit when merging lora adapters
+
+### model
+model_name_or_path: DeepSeek-R1-Distill-Llama-8B
+adapter_name_or_path: saves/DeepSeek-R1-8B-Distill/lora/train_2025-04-18-16-26-50-DeepSeek-R1-Distill-Llama-8B
+template: deepseek3
+trust_remote_code: true
+
+### export
+export_dir: ds_lora_llama_8B
+export_size: 5
+export_device: cuda
+export_legacy_format: false
