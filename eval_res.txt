@@ -75,3 +75,10 @@ Meta-Llama-3.1-8B-Instruct:{
     "predict_samples_per_second": 13.136,
     "predict_steps_per_second": 0.206
 }
+
+real:{
+    "bleu-4": 25.967258451417003,
+    "rouge-1": 31.49235721997301,
+    "rouge-2": 7.608175556680162,
+    "rouge-l": 29.162584412955468
+}
