@@ -183,3 +183,6 @@ nlp_bert_document-segmentation_english-base/
 ds_lora_llama_8B/
 data/squad_v2_qgen_filtered_with_answer.json
 data/squad_v2_qgen_filtered.json
+dataset/orcas-doctrain-top100.gz
+
+SFT_result
