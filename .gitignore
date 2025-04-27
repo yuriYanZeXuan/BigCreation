@@ -186,3 +186,7 @@ data/squad_v2_qgen_filtered.json
 dataset/orcas-doctrain-top100.gz
 
 SFT_result
+gradio/*
+.gradio/*
+*.pyc
+*.pem

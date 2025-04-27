@@ -2,7 +2,23 @@
 
 from openai import OpenAI
 import json
-def init_openai():  
+def init_openai(local_run=False):
+    print(f"local_run: {local_run}")
+    if local_run:
+        try:
+            client = OpenAI(api_key="empty", base_url="http://127.0.0.1:8000/v1")
+            # 测试连接
+            response = client.chat.completions.create(
+                model="deepseek-chat",
+                messages=[{"role": "user", "content": "test"}],
+                stream=False
+            )
+            print("本地服务器连接成功")
+            return client
+        except Exception as e:
+            print(f"连接本地服务器失败: {str(e)}")
+            print("请确保本地服务器正在运行，并且端口 8000 可访问")
+            raise
     with open("config/apikey.json", "r") as f:
         api_key = json.load(f)["api_key"]
 
@@ -76,12 +92,12 @@ def test_api():
     )
     print(response.choices[0].message.content)
 
-def process_file(file, question_type):
+def process_file(file, question_type,local_run=False):
     print(file)
     print(question_type)
     # return f"已选择的题型: {question_type},文件名: {file.name}"
     text = convert_to_txt(file)
-    client = init_openai()
+    client = init_openai(local_run=local_run)
     prompt=f"""
     请根据以下内容生成{question_type}类型的题目，题目要求：
     1. 题目数量：3道
@@ -94,6 +110,7 @@ def process_file(file, question_type):
         messages=[{"role": "system", "content": prompt}],
         stream=False
     )
+    print(f"result:{response.choices[0].message.content}")
     return response.choices[0].message.content
 
 if __name__ == "__main__":
